@@ -1,11 +1,9 @@
 /* eslint-disable no-unused-vars */
 import { Component } from 'react';
 import './App.css';
-import Example from './components/HookExample';
+import Form from './components/Form';
 import Header from './components/Header';
-import HookExample from './components/Hook/HookExample';
 import Product from './components/Hook/Product';
-import Form from './components/Hook/Form';
 import State from './components/State';
 
 class App extends Component {
@@ -37,14 +35,13 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header />
-        {/* <HookExample/> */}
+        <Header/>
         <div className="row">
           {this.showProduct()}
-         
         </div>
-        <Form/>
-        <State/>
+       
+        <State />
+         <Form />
       </div>
     );
   }
